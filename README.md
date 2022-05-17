@@ -11,7 +11,7 @@
 ## DNA-Seq Analysis
 ### DNA-Seq Alignment
 - Workflow git repo: https://github.com/icgc-argo-workflows/dna-seq-processing-wfs
-- BWA-MEM alignment workflow for Whole Exome Sequencing (WXS), Whole Genome Sequencing (WGS), Targeted Sequencing, and some other DNA-Seq experimental strategies. The workflow takes either BAM or FASTQ files as inputs, performs reads mapping for each read group, and optional step of MarkDuplicates, then outputs a merged and sorted CRAM file, a CRAM index file, and various QC metrics files.
+- This repository maintains the Nextflow workflow code for BWA-MEM alignment, which can be used for Whole Exome Sequencing (WXS), Whole Genome Sequencing (WGS), Targeted Sequencing, and some other DNA-Seq experimental strategies. The workflow takes either BAM or FASTQ files as inputs, performs reads mapping for each read group, and optional step of MarkDuplicates, then outputs a merged and sorted CRAM file, a CRAM index file, and various QC metrics files.
 
 ### Sanger WGS Variant Calling
 - Workflow git repo: https://github.com/icgc-argo-workflows/sanger-wgs-variant-calling
@@ -42,7 +42,7 @@
 ## RNA-Seq Analysis
 ### RNA-Seq Alignment
 - Workflow git repo: https://github.com/icgc-argo-workflows/rna-seq-alignment
-- STAR and HiSAT2 RNA-Seq alignment workflows that take either BAM and FASTQ files as inputs, and generates genome aligned CRAM,  Splice Junction Quantifications, and various QC metrics files.
+- This repository maintains the Nextflow workflow code for STAR and HiSAT2 RNA-Seq alignment workflows that take either BAM and FASTQ files as inputs, and generates genome aligned CRAM,  Splice Junction Quantifications, and various QC metrics files.
 
 
 ### RNA-Seq Expression Counting
