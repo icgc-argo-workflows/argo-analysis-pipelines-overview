@@ -1,7 +1,29 @@
+
 # Overview of ICGC-ARGO Analysis Pipelines
+- [Introduction](#introduction)
+- [DNA-Seq Analysis](#dna-seq-analysis)
+  - [DNA-Seq Alignment](#dna-seq-alignment)
+  - [Sanger WGS Variant Calling](#sanger-wgs-variant-calling)
+  - [Sagner WXS Variant Calling](#sagner-wxs-variant-calling)
+  - [GATK Mutect2 Variant Calling](#gatk-mutect2-variant-calling)
+  - [Open Access Variant Filtering](#open-access-variant-filtering)
+  - [Somatic SNV and InDel Variant Calling](#somatic-snv-and-indel-variant-calling)
+  - [Stuctural Variant and Copy Number Calling](#stuctural-variant-and-copy-number-calling)
+- [RNA-Seq Analysis](#rna-seq-analysis)
+  - [RNA-Seq Alignment](#rna-seq-alignment)
+  - [RNA-Seq Expression Counting](#rna-seq-expression-counting)
+  - [RNA Editing](#rna-editing)
+  - [Alternative Promoter Analysis](#alternative-promoter-analysis)
+  - [Allele Specific Expression](#allele-specific-expression)
+  - [RNA-Seq Splicing](#rna-seq-splicing)
+  - [RNA-Seq Data Simulation](#rna-seq-data-simulation)
+- [ARGO QC Tools and Workflows](#argo-qc-tools-and-workflows)
+- [Mutational Signatures Analysis](#mutational-signatures-analysis)
+- [ARGO Reference Files](#argo-reference-files)
+- [ARGO Utility](#argo-utility)
 
 ## Introduction
-- This gives an overview of major ICGC ARGO analysis pipelines. The content will be peoriodically reviewed and changed over time.  
+- This gives an overview of major ICGC ARGO analysis pipelines which are running in production or with development work in progress. The content will be periodically reviewed and changed over time.  
 - Current ARGO production workflows are running in Regional Data Processing Centre (RDPC).
 - Each ARGO workflow in the repositories has been tested on accompany test datasets.
 - All ARGO analysis workflows are written in [Nextflow](https://www.nextflow.io/) with Dockerized tools.
@@ -30,7 +52,7 @@
 - Workflow git repo: https://github.com/icgc-argo-workflows/open-access-variant-filtering
 - This repository maintains the source code of the ICGC ARGO Open-access Somatic Variant Filtering Workflow. It is a bioinformatics workflow that can be used to filter SNV/InDel VCFs based on predefined genomic regions.
 
-### Somatic SNV/InDel Variant Calling
+### Somatic SNV and InDel Variant Calling
 - WIP git repo: https://github.com/icgc-argo-workflows/argo-somatic-variant-calling 
 - This repository contains a collection of somatic SNV/InDel variant callers used for various analysis in the context of the ICGC ARGO project.
 
